@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Marcus</title>
+        <title>Marcus | About</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -23,12 +23,17 @@ export default function Home() {
           <br></br>
           Marcus Y
         </h1>
-
         <p className={styles.description}>
-          Student-developer working in TypeScript.
-          <br />
-          <Link href="/about">About</Link> · <Link href="/blog">Blog</Link> ·{" "}
-          <Link href="https://github.com/geenva/">GitHub</Link>
+          Hello! Thanks for visiting this site.
+        </p>
+        <p className={styles.description}>
+          I am a student and a developer primarily working in TypeScript. <br />{" "}
+          I also frequently use Node.js, React, and Next.js (this is what this
+          website is built with) and MongoDB.
+        </p>
+        <p className={styles.description}>
+          Currently, I am learning C++, Rust and Go. To keep up with my
+          progress, <Link href="/blog">take a look at my blog!</Link>
         </p>
       </main>
 

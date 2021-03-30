@@ -21,14 +21,15 @@ export default function Home() {
             height="150vw"
           />
           <br></br>
-          Marcus Y
+          Marcus Y.
         </h1>
 
         <p className={styles.description}>
           Student-developer working in TypeScript.
           <br />
           <Link href="/about">About</Link> · <Link href="/blog">Blog</Link> ·{" "}
-          <Link href="https://github.com/geenva/">GitHub</Link>
+          <Link href="https://github.com/geenva/">GitHub</Link> ·{" "}
+          <Link href="/contact">Contact</Link>
         </p>
       </main>
 
