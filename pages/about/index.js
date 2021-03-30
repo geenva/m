@@ -21,7 +21,7 @@ export default function Home() {
             height="150vw"
           />
           <br></br>
-          Marcus Y
+          Marcus Y.
         </h1>
         <p className={styles.description}>
           Hello! Thanks for visiting this site.
