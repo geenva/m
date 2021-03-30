@@ -35,6 +35,9 @@ export default function Home() {
           Currently, I am learning C++, Rust and Go. To keep up with my
           progress, <Link href="/blog">take a look at my blog!</Link>
         </p>
+        <Link href="/">
+          <a>← Back to home</a>
+        </Link>
       </main>
 
       <footer className={styles.footer}>
