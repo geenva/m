@@ -23,7 +23,6 @@ export default function Contact() {
           <br></br>
           Marcus Y.
         </h1>
-
         <p className={styles.description}>
           Thanks for trying to contact me! Here are ways to contact me:
         </p>
@@ -32,7 +31,10 @@ export default function Contact() {
           <a target="_blank" href="mailto:m@marcuscodes.me">
             m@marcuscodes.me
           </a>
-        </p>
+        </p>{" "}
+        <Link href="/">
+          <a>← Back to home</a>
+        </Link>
       </main>
 
       <footer className={styles.footer}>
