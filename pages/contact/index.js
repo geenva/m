@@ -24,7 +24,7 @@ export default function Contact() {
           Marcus Y.
         </h1>
         <p className={styles.description}>
-          Thanks for trying to contact me! Here are ways to contact me:
+          Thanks for trying to contact me! Here are ways:
         </p>
         <p className={styles.description}>
           📧 Email:{" "}
