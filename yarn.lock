@@ -1340,7 +1340,7 @@ native-url@0.3.4:
   dependencies:
     querystring "^0.2.0"
 
-next@10.1.2:
+next@^10.1.2:
   version "10.1.2"
   resolved "https://registry.yarnpkg.com/next/-/next-10.1.2.tgz#2c508cc2982077f0bad6863be020c10c1d059970"
   integrity sha512-S2KYS8NXeFmaJd8EyoC/kWi3uIlNz3PghnpDWYwy5dxhbtyaozK7fVpXmDcOTQEyYq3BZG5ph0B+hOsAwMdYfQ==
