@@ -28,11 +28,9 @@ React itself is an amazing library, but combined with Next.js, it is extremely p
 
 ## Now vs. Legacy
 
+[Legacy website](https://website-383x6qfnk.vercel.app/)
+
 My legacy website was a single page website created with plain HTML and JavaScript. I find it very slow and bloated. It only contained basic information about me.
-
-![Legacy Website](https://mcs.is-inside.me/KqgjqRXt.png)
-
-> The legacy website
 
 The current website has a cleaner design containing updated and useful information about me, and it also contains a blog, which was only possible with [routes] with Next.js! It also has auto code-splitting, and it's also deployed with Vercel, so I get analytics as well. Currently, it loads under 1.5 seconds for mobile and 0.6 seconds for desktop. That's really fast compared to the desktop speed of loading for legacy, which was an average of 7 seconds because it needed to fetch external content.
 
