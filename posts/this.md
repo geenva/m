@@ -28,7 +28,7 @@ React itself is an amazing library, but combined with Next.js, it is extremely p
 
 ## Now vs. Legacy
 
-[Legacy website](https://website-383x6qfnk.vercel.app/)
+[Click here for the legacy website](https://website-383x6qfnk.vercel.app/)
 
 My legacy website was a single page website created with plain HTML and JavaScript. I find it very slow and bloated. It only contained basic information about me.
 
