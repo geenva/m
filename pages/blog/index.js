@@ -24,14 +24,14 @@ export default function Home({ allPostsData }) {
       <section className={utilStyles.headingMd}></section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
+          {allPostsData.map(({ id, date, title, topic }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href={`/posts/${id}`}>
                 <a>{title}</a>
               </Link>
               <br />
               <small className={utilStyles.lightText}>
-                <Date dateString={date} />
+                {topic.toUpperCase()} | <Date dateString={date} />
               </small>
             </li>
           ))}

@@ -1,6 +1,7 @@
 ---
 title: "How I Made This Site"
 date: "2021-03-31"
+topic: "tech"
 ---
 
 Hello! Thanks for taking your time to visit this blog. This is my first website with Next.js.
