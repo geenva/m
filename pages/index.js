@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await fetch(process.env.API);
   let data = await res.json();
 
