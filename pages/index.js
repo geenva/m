@@ -8,13 +8,13 @@ export async function getStaticProps() {
   const res = await fetch(process.env.API);
   let data = await res.json();
 
-  if (data.content == "online" || "dnd" || "idle") {
-    data = "/profile-online.png";
+  if (data.content == "offline") {
+    data = "/profile-offline.png";
     return {
       props: { data },
     };
-  } else if (data.content == "offline") {
-    data = "/profile-offline.png";
+  } else if (data.content == "online" || "dnd" || "idle") {
+    data = "/profile-online.png";
     return {
       props: { data },
     };
