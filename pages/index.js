@@ -2,7 +2,6 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 export async function getServerSideProps() {
   const res = await fetch(process.env.API);
