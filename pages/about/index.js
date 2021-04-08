@@ -15,7 +15,7 @@ export default function Home() {
         <h1 className={styles.title}>
           <Image
             className="center"
-            src="/profile.jpg"
+            src="/profile.png"
             alt="Profile picture"
             width="150vw"
             height="150vw"
