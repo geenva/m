@@ -54,12 +54,6 @@ export default function Home({ data }) {
           <Link href="/contact">Contact</Link>
         </p>
       </main>
-
-      <footer className={styles.footer}>
-        © 2021-present Marcus Y. This website is open-sourced{" "}
-        <a href="https://github.com/geenva/m">  here  </a> under the{" "}
-        <Link href="/LICENSE.txt">  MIT license</Link>.
-      </footer>
     </div>
   );
 }
