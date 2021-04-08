@@ -2,6 +2,8 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import Typed from "react-typed";
+import strings from "../typed/strings";
 
 export async function getServerSideProps() {
   const res = await fetch(process.env.API);
@@ -44,9 +46,14 @@ export default function Home({ data }) {
           <br></br>
           Marcus Y.
         </h1>
-
         <p className={styles.description}>
-          Student-developer working in TypeScript.
+          <Typed
+            className={styles.description}
+            strings={strings}
+            typeSpeed={100}
+            backSpeed={50}
+            loop
+          />{" "}
           <br />
           <Link href="/about">About</Link> · <Link href="/blog">Blog</Link> ·{" "}
           <Link href="https://github.com/geenva/">GitHub</Link> ·{" "}
