@@ -11,22 +11,15 @@ export async function getStaticProps() {
 
   if (data.content == "offline") {
     data = "/profile-offline.png";
-    return {
-      props: { data },
-    };
   } else if (data.content == "online" || "dnd" || "idle") {
     data = "/profile-online.png";
-    return {
-      props: { data },
-      revalidate: 60,
-    };
   } else {
     data = "/profile.png";
-    return {
-      props: { data },
-      revalidate: 60,
-    };
   }
+  return {
+    props: { data },
+    revalidate: 60,
+  };
 }
 
 export default function Home({ data }) {
