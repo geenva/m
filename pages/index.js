@@ -5,7 +5,7 @@ import Link from "next/link";
 import Typed from "react-typed";
 import strings from "../typed/strings";
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const res = await fetch(process.env.API);
   let data = await res.json();
 
@@ -18,11 +18,13 @@ export async function getServerSideProps() {
     data = "/profile-online.png";
     return {
       props: { data },
+      revalidate: 60,
     };
   } else {
     data = "/profile.png";
     return {
       props: { data },
+      revalidate: 60,
     };
   }
 }
