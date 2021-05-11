@@ -50,3 +50,11 @@
 .lightText {
   color: #666;
 }
+
+.global a {
+  text-decoration: underline;
+}
+
+.global a:hover {
+  color: lightblue;
+}
