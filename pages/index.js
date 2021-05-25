@@ -31,13 +31,17 @@ export default function Home({ data }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Image
+        <motion.img
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
           className="center"
           src={data}
           alt="Profile picture"
           width="150vw"
           height="150vw"
         />
+        <br />
+        <br />
 
         <div>
           <motion.h1
