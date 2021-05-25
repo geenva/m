@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Typed from "react-typed";
 import strings from "../typed/strings";
+import { motion } from "framer-motion";
 
 export async function getStaticProps() {
   const res = await fetch(process.env.API);
@@ -30,7 +31,11 @@ export default function Home({ data }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1 className={styles.title}>
+        <motion.h1
+          className={styles.title}
+          animate={{ scale: 1.2 }}
+          transition={{ duration: 1 }}
+        >
           <Image
             className="center"
             src={data}
@@ -40,7 +45,7 @@ export default function Home({ data }) {
           />
           <br></br>
           Marcus Y.
-        </h1>
+        </motion.h1>
         <p className={styles.description}>
           <Typed
             className={styles.description}
