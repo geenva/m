@@ -31,21 +31,23 @@ export default function Home({ data }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <motion.h1
-          className={styles.title}
-          animate={{ scale: 1.2 }}
-          transition={{ duration: 1 }}
-        >
-          <Image
-            className="center"
-            src={data}
-            alt="Profile picture"
-            width="150vw"
-            height="150vw"
-          />
-          <br></br>
-          Marcus Y.
-        </motion.h1>
+        <Image
+          className="center"
+          src={data}
+          alt="Profile picture"
+          width="150vw"
+          height="150vw"
+        />
+
+        <div>
+          <motion.h1
+            className={styles.title}
+            animate={{ scale: 1.5 }}
+            transition={{ duration: 1 }}
+          >
+            Marcus Y.
+          </motion.h1>
+        </div>
         <p className={styles.description}>
           <Typed
             className={styles.description}
