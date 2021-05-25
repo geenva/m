@@ -4,8 +4,6 @@ const strings = [
   "Student-developer working in React",
   "Student-developer working in Next.js",
   "Student-developer working in JavaScript",
-  "Student-developer working in C++",
   "Student-developer learning Rust",
-  "Student-developer learning Go",
 ];
 export default strings;

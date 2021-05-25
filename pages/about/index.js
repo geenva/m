@@ -32,8 +32,11 @@ export default function Home() {
           website is built with) and MongoDB.
         </p>
         <p className={styles.description}>
-          Currently, I am learning C++, Rust and Go. To keep up with my
-          progress, <Link href="/blog">take a look at my blog!</Link>
+          I am constantly learning new technologies. Currently, I am learning
+          Rust.{" "}
+          <Link href="/blog">
+            Take a look at my blog to see what I'm doing!
+          </Link>
         </p>
         <Link href="/">
           <a>← Back to home</a>
