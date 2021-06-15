@@ -5,9 +5,10 @@ import Link from "next/link";
 import Typed from "react-typed";
 import strings from "../typed/strings";
 import { motion } from "framer-motion";
+import { IHomeProps } from "../types/Home";
 
 export async function getStaticProps() {
-  const res = await fetch(process.env.API);
+  const res = await fetch(process.env.API!);
   let data = await res.json();
 
   if (data.content == "offline") {
@@ -23,7 +24,7 @@ export async function getStaticProps() {
   };
 }
 
-export default function Home({ data }) {
+export default function Home({ data }: IHomeProps) {
   return (
     <div className={styles.container}>
       <Head>

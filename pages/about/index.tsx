@@ -27,9 +27,8 @@ export default function Home() {
           Hello! Thanks for visiting this site.
         </p>
         <p className={styles.description}>
-          I am a student and a developer primarily working in TypeScript. <br />{" "}
-          I also frequently use Node.js, React, and Next.js (this is what this
-          website is built with) and MongoDB.
+          I am a developer (and a student) creating utilities mostly for myself
+          and my friends, using TypeScript, Next.js/React and
         </p>
         <p className={styles.description}>
           I am constantly learning new technologies. Currently, I am learning
