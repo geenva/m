@@ -1,30 +1,49 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import Image from "next/image";
 import Link from "next/link";
 import Typed from "react-typed";
 import strings from "../typed/strings";
 import { motion } from "framer-motion";
-import { IHomeProps } from "../types/Home";
+import { useLanyard } from "use-lanyard";
 
-export async function getStaticProps() {
-  const res = await fetch(process.env.API!);
-  let data = await res.json();
+export default function Home() {
+  const { data: activity } = useLanyard("457805013474082817");
 
-  if (data.content == "offline") {
-    data = "/profile-offline.png";
-  } else if (data.content == "online" || "dnd" || "idle") {
-    data = "/profile-online.png";
-  } else {
-    data = "/profile.png";
+  let profilePicture:
+    | "/profile-online.png"
+    | "/profile-offline.png"
+    | "/profile.png" = "/profile.png";
+
+  if (
+    activity?.discord_status == "online" ||
+    activity?.discord_status == "dnd" ||
+    activity?.discord_status == "idle"
+  )
+    profilePicture = "/profile-online.png";
+  else if (activity?.discord_status == "offline") profilePicture == null;
+
+  let status = undefined;
+
+  for (let i in activity?.activities) {
+    if (activity?.listening_to_spotify) {
+      status =
+        "🎶 Listening to " +
+        activity.spotify?.song +
+        " by " +
+        activity.spotify?.artist;
+      break;
+    }
+
+    if (activity?.activities[i].type == 4) continue;
+
+    if (activity?.activities[i].name == "Visual Studio Code") {
+      status = "💻 " + activity.activities[i].state;
+      break;
+    }
+
+    status = "ℹ️ " + activity?.activities[i].name;
   }
-  return {
-    props: { data },
-    revalidate: 60,
-  };
-}
 
-export default function Home({ data }: IHomeProps) {
   return (
     <div className={styles.container}>
       <Head>
@@ -36,7 +55,7 @@ export default function Home({ data }: IHomeProps) {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           className="center"
-          src={data}
+          src={profilePicture}
           alt="Profile picture"
           width="150vw"
           height="150vw"
@@ -53,7 +72,10 @@ export default function Home({ data }: IHomeProps) {
             Marcus Y.
           </motion.h1>
         </div>
+
         <p className={styles.description}>
+          <strong>{status}</strong>
+          <br />
           <Typed
             className={styles.description}
             strings={strings}
