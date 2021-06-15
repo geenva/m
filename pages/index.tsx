@@ -74,8 +74,12 @@ export default function Home() {
         </div>
 
         <p className={styles.description}>
-          <strong>{status}</strong>
-          <br />
+          {status ? (
+            <>
+              <strong>{status}</strong>
+              <br />
+            </>
+          ) : null}
           <Typed
             className={styles.description}
             strings={strings}
