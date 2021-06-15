@@ -28,11 +28,10 @@ export default function Home() {
         </p>
         <p className={styles.description}>
           I am a developer (and a student) creating utilities mostly for myself
-          and my friends, using TypeScript, Next.js/React and
+          and my friends, using TypeScript, Next.js/React and Node.js.
         </p>
         <p className={styles.description}>
-          I am constantly learning new technologies. Currently, I am learning
-          Rust.{" "}
+          Currently, I'm learning Rust.{" "}
           <Link href="/blog">
             Take a look at my blog to see what I'm doing!
           </Link>
