@@ -41,7 +41,11 @@ export default function Home() {
       break;
     }
 
-    status = "ℹ️ " + activity?.activities[i].name;
+    status =
+      "ℹ️ " +
+      activity?.activities[i].name +
+      " | " +
+      activity?.activities[i].state;
   }
 
   return (
