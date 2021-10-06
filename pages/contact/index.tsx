@@ -28,7 +28,7 @@ export default function Contact() {
         </p>
         <p className={styles.description}>
           📧 Email:{" "}
-          <a target="_blank" href="mailto:m@marcuscodes.me">
+          <a target="_blank" href="mailto:m@ymarc.us">
             m@marcuscodes.me
           </a>
         </p>{" "}
