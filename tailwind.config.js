@@ -11,7 +11,7 @@ module.exports = {
             sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`,
       },
       backgroundImage: {
-        "kid-a-mnesia": "url('/img/kid a mnesia.jpg')",
+        "kid-a-mnesia": "url('/img/kid-a-mnesia.jpg')",
       },
     },
   },
