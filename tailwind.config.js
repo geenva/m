@@ -10,6 +10,9 @@ module.exports = {
             BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
             sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`,
       },
+      backgroundImage: {
+        "kid-a-mnesia": "url('/img/kid a mnesia.jpg')",
+      },
     },
   },
   plugins: [],
