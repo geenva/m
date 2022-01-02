@@ -1,5 +1,8 @@
 import type { NextPage } from "next";
-import LastFM from "../components/LastFM";
+import useSWR from "swr";
+import { Response } from "./api/lastfm";
+import { IoIosMusicalNotes } from "react-icons/io";
+import Song from "../components/Song";
 
 const Home: NextPage = () => {
   return (
@@ -10,7 +13,9 @@ const Home: NextPage = () => {
           Software developer currently in the{" "}
           <span className="font-bold">United Kingdom</span>.
         </p>
-        <LastFM />
+        <Song />
+        <br />
+        <p className="text-2xl">Coming soon.</p>
       </div>
     </main>
   );
