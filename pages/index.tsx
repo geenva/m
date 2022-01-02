@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import LastFM from "../components/lastFM";
 
 const Home: NextPage = () => {
   return (
@@ -9,6 +10,7 @@ const Home: NextPage = () => {
           Software developer currently in the{" "}
           <span className="font-bold">United Kingdom</span>.
         </p>
+        <LastFM />
       </div>
     </main>
   );
