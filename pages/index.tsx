@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import LastFM from "../components/lastFM";
+import LastFM from "../components/LastFM";
 
 const Home: NextPage = () => {
   return (
