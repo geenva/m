@@ -4,7 +4,7 @@ import Status from "../components/Status";
 import Link from "next/link";
 import { IoInformationCircle, IoPencil } from "react-icons/io5";
 import { useLanyard } from "use-lanyard";
-// https://dcdn.dstn.to/avatars/457805013474082817?size=1280
+import Profile from "../components/Profile";
 const Home: NextPage = () => {
   const lanyard = useLanyard(process.env.NEXT_PUBLIC_DISCORD_ID!);
 
@@ -12,6 +12,7 @@ const Home: NextPage = () => {
     <main className="font-sans bg-black flex flex-col h-screen text-white">
       <div className="m-12 grid grid-cols-none lg:grid-cols-2">
         <div>
+          <Profile lanyard={lanyard} />
           <h1 className="text-6xl font-bold">Marcus Y.</h1>
           <p className="opacity-70 text-xl">
             Software developer currently in the{" "}
