@@ -22,9 +22,7 @@ export default function Status() {
           <>
             | <span className="animate-pulse">{activity}</span>
           </>
-        ) : (
-          "null"
-        )}
+        ) : null}
       </span>
     </p>
   );
