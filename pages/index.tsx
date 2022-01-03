@@ -5,6 +5,9 @@ import Link from "next/link";
 import { IoInformationCircle, IoPencil } from "react-icons/io5";
 import { useLanyard } from "use-lanyard";
 import Profile from "../components/Profile";
+import { SiGithub } from "react-icons/si";
+import { HiMail } from "react-icons/hi";
+
 const Home: NextPage = () => {
   const lanyard = useLanyard(process.env.NEXT_PUBLIC_DISCORD_ID!);
 
@@ -18,6 +21,14 @@ const Home: NextPage = () => {
             Software developer currently in the{" "}
             <span className="font-bold">United Kingdom</span>.
           </p>
+          <div className="text-3xl flex space-x-2">
+            <a href="https://github.com/geenva">
+              <SiGithub />
+            </a>
+            <a href="mailto:m@ymarc.us">
+              <HiMail />
+            </a>
+          </div>
           <br />
           <Status lanyard={lanyard} />
           <Song />
