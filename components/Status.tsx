@@ -1,6 +1,8 @@
 import { useLanyard } from "use-lanyard";
 import { IoMdGitCommit } from "react-icons/io";
 
+const blacklist = ["Spotify", "Apple Music", "Custom Status"];
+
 export default function Status() {
   const { data } = useLanyard(process.env.NEXT_PUBLIC_DISCORD_ID!);
   const activityData = data?.activities;
@@ -8,7 +10,7 @@ export default function Status() {
   let status = data?.discord_status == "offline" ? "Offline" : "Online";
 
   activityData?.forEach((item) => {
-    if (item.name !== "Spotify" && item.name !== "Apple Music")
+    if (!blacklist.includes(item.name))
       activity = "Playing " + item.name + " • " + item.details;
   });
 
