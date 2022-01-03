@@ -1,7 +1,4 @@
 import type { NextPage } from "next";
-import useSWR from "swr";
-import { Response } from "./api/lastfm";
-import { IoIosMusicalNotes } from "react-icons/io";
 import Song from "../components/Song";
 
 const Home: NextPage = () => {

@@ -109,16 +109,3 @@ export default api({
     };
   },
 });
-
-/*
-    const data = axios.get("http://ws.audioscrobbler.com/2.0/?method=&api_key=")
-  const lastFM = ("flarely", "509526400b99799201a933cab37bfa19");
-  console.log(lastFM.status);
-  if (lastFM.status !== "playing") return null;
-
-  return (
-    <p>
-      <HiMusicNote /> Listening to {lastFM.song.name} by {lastFM.song.artist}
-    </p>
-  );
-*/
