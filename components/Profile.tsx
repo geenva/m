@@ -12,11 +12,11 @@ export default function Status(props: {
 
   return (
     <Image
-      className="rounded-lg"
+      className="rounded-full"
       src={avatar}
       layout="intrinsic"
-      width="320"
-      height="320"
+      width="160"
+      height="160"
       alt="Profile picture"
     />
   );
