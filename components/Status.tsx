@@ -1,9 +1,12 @@
-import { useLanyard } from "use-lanyard";
+import { Data, LanyardError, useLanyard } from "use-lanyard";
 import { IoMdGitCommit } from "react-icons/io";
+import { SWRResponse } from "swr";
 
 const blacklist = ["Spotify", "Apple Music", "Custom Status"];
 
-export default function Status() {
+export default function Status(props: {
+  lanyard: SWRResponse<Data, LanyardError>;
+}) {
   const { data } = useLanyard(process.env.NEXT_PUBLIC_DISCORD_ID!);
   const activityData = data?.activities;
   let activity = null;
