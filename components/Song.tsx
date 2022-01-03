@@ -8,7 +8,7 @@ export default function Song() {
   const data = useSWR("/api/lastfm", fetcher);
   const song: Response = data.data;
 
-  if (!song) return null;
+  if (!song?.data.playing) return null;
 
   return (
     <p className="opacity-80 flex space-x-2 -space-y-1">

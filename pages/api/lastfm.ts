@@ -3,13 +3,13 @@ import { createAPI } from "nextkit";
 
 export interface Response {
   success: boolean;
-  playing: boolean;
   data: Data;
   status: number;
   message?: string;
 }
 
 export interface Data {
+  playing: boolean;
   name?: string;
   artist?: string;
   album?: string;
@@ -80,7 +80,12 @@ const getCurrentSong = async () => {
 
   const song = data.recenttracks.track[0];
 
-  if (!song || song["@attr"]?.nowplaying == "false") return null;
+  if (
+    !song ||
+    song["@attr"]?.nowplaying == "false" ||
+    !song["@attr"]?.nowplaying
+  )
+    return null;
 
   return song;
 };
