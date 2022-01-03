@@ -49,8 +49,11 @@ const Home: NextPage = () => {
           </div>
           <br />
         </div>
-        <div className="text-2xl md:text-4xl">
-          <p>Hello! Welcome to my website. Something something something.</p>
+        <div>
+          <h1 className="font-bold text-6xl">Hello!</h1>
+          <div className="text-2xl">
+            <p>I&apos;m Marcus and I am a student and hobby developer.</p>
+          </div>
         </div>
       </div>
     </main>
