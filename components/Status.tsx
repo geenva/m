@@ -7,7 +7,7 @@ const blacklist = ["Spotify", "Apple Music", "Custom Status"];
 export default function Status(props: {
   lanyard: SWRResponse<Data, LanyardError>;
 }) {
-  const { data } = useLanyard(process.env.NEXT_PUBLIC_DISCORD_ID!);
+  const { data } = props.lanyard;
   const activityData = data?.activities;
   let activity = null;
   let status = data?.discord_status == "offline" ? "Offline" : "Online";
