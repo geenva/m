@@ -10,7 +10,7 @@ const Home: NextPage = () => {
 
   return (
     <main className="font-sans bg-black flex flex-col h-screen text-white">
-      <div className="m-12 grid grid-cols-none lg:grid-cols-2">
+      <div className="m-3 md:m-12 grid grid-cols-none lg:grid-cols-2">
         <div>
           <Profile lanyard={lanyard} />
           <h1 className="text-6xl font-bold">Marcus Y.</h1>
