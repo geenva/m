@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Song from "../components/Song";
+import Status from "../components/Status";
 
 const Home: NextPage = () => {
   return (
@@ -10,6 +11,8 @@ const Home: NextPage = () => {
           Software developer currently in the{" "}
           <span className="font-bold">United Kingdom</span>.
         </p>
+        <br />
+        <Status />
         <Song />
         <br />
         <p className="text-2xl">Coming soon.</p>
