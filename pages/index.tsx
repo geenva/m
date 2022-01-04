@@ -7,6 +7,7 @@ import { useLanyard } from "use-lanyard";
 import Profile from "../components/Profile";
 import { SiGithub } from "react-icons/si";
 import { HiMail } from "react-icons/hi";
+import Card from "../components/Card";
 
 const Home: NextPage = () => {
   const lanyard = useLanyard(process.env.NEXT_PUBLIC_DISCORD_ID!);
@@ -50,10 +51,11 @@ const Home: NextPage = () => {
           <br />
         </div>
         <div>
-          <h1 className="font-bold text-6xl">Hello!</h1>
-          <div className="text-2xl">
-            <p>I&apos;m Marcus and I am a student and hobby developer.</p>
-          </div>
+          <Card
+            title="Website"
+            description="My personal website."
+            url="https://github.com/geenva/m"
+          />
         </div>
       </div>
     </main>
