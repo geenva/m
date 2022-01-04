@@ -1,8 +1,7 @@
 import { Response } from "../pages/api/lastfm";
 import useSWR from "swr";
 import { SiApplemusic as SiAppleMusic } from "react-icons/si";
-
-const fetcher = (url: string) => fetch(url).then((res) => res.json());
+import fetcher from "../utils/fetcher";
 
 export default function Song() {
   const data = useSWR("/api/lastfm", fetcher);

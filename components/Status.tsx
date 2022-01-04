@@ -1,4 +1,4 @@
-import { Data, LanyardError, useLanyard } from "use-lanyard";
+import { Data, LanyardError } from "use-lanyard";
 import { IoMdGitCommit } from "react-icons/io";
 import { SWRResponse } from "swr";
 

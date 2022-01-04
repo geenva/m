@@ -7,15 +7,15 @@ import { useLanyard } from "use-lanyard";
 import Profile from "../components/Profile";
 import { SiGithub } from "react-icons/si";
 import { HiMail } from "react-icons/hi";
-import Card from "../components/Card";
+import Projects from "../components/Projects";
 
 const Home: NextPage = () => {
   const lanyard = useLanyard(process.env.NEXT_PUBLIC_DISCORD_ID!);
 
   return (
     <main className="font-sans bg-black flex flex-col h-screen text-white">
-      <div className="m-3 md:m-12 grid grid-cols-none lg:grid-cols-2">
-        <div>
+      <div className="m-3 md:m-12 grid grid-cols-none lg:grid-cols-3">
+        <div className="col-span-2">
           <Profile lanyard={lanyard} />
           <h1 className="text-6xl font-bold">Marcus Y.</h1>
           <p className="opacity-70 text-xl">
@@ -51,11 +51,9 @@ const Home: NextPage = () => {
           <br />
         </div>
         <div>
-          <Card
-            title="Website"
-            description="My personal website."
-            url="https://github.com/geenva/m"
-          />
+          <h1 className="text-6xl font-bold">Projects</h1>
+          <br />
+          <Projects />
         </div>
       </div>
     </main>
