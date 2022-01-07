@@ -50,7 +50,7 @@ const Home: NextPage = () => {
           </div>
           <br />
         </div>
-        <div>
+        <div className="hidden md:unhide">
           <h1 className="text-6xl font-bold">Projects</h1>
           <br />
           <Projects />
