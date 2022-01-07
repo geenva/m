@@ -47,6 +47,13 @@ const Home: NextPage = () => {
                 <span>Blog</span>
               </a>
             </Link>
+            <a
+              href="https://buttondown.email/o/"
+              className="flex space-x-2 -space-y-1 hover:underline"
+            >
+              <HiMail />
+              <span>Newsletter</span>
+            </a>
           </div>
           <br />
         </div>
