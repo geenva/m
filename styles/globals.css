@@ -14,7 +14,3 @@
     border-color: theme("colors.blue.600");
   }
 }
-
-.unhide {
-  display: unset;
-}

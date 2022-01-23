@@ -57,7 +57,7 @@ const Home: NextPage = () => {
           </div>
           <br />
         </div>
-        <div className="hidden md:unhide">
+        <div className="invisible md:visible">
           <h1 className="text-6xl font-bold">Projects</h1>
           <br />
           <Projects />
